@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.antstudio.cz/front/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.antstudio.cz/front/favicon-16x16.png">
+    <title>ANT studio icons reference</title>
+    <style>
+        *,*::before,*::after{box-sizing:border-box}
+        html,body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:1rem;font-size:16px}
+        body>svg{display:none}
+        cx-icon{width:1em;display:inline-block}
+        cx-icon:not([name]){text-indent: -999999px}
+        cx-icon svg{fill:currentColor;width:1em;height:1em;vertical-align:-0.15em;display:inline-block}
+        .logo{display:inline-block;max-width:100%;height:auto}
+        .logo__wrap{margin-bottom:3rem}
+        .icon{font-size:3rem;box-shadow:0 2px 3px hsla(0, 0%, 4%, .1),0 0 0 1px hsla(0, 0%, 4%, .1);padding:0.75rem;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+        .icon--dark{background-color:#2a3230;color:#fff}
+        .icon--light{background-color:#fff;color:#000}
+        .icon--color{background-color:#fff;color:#4FB76C}
+        .icon--dark-color{background-color:#2a3230;color:#4FB76C}
+        .icon__wrap{display:grid;grid-gap:2rem;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+        .icon__controls{font-size:1rem;display:flex;align-items:center;justify-content:space-between;width:100%;border-top:1px solid #ccc;padding-top:0.75rem;margin-top:0.75rem}
+        .icon__name{font-weight:bold;padding-right:0.75rem;word-break:break-all}
+        .icon__switcher{width:20px;height:20px;display:block;box-shadow:0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1),0 2px 3px hsla(0,0%,100%,0.3),0 0 0 1px hsla(0,0%,100%,0.3);border-radius:50%;cursor:pointer;margin-bottom:0.25rem}
+        .icon__switcher__wrap{position:absolute;top:0.75rem;left:0.75rem;opacity:0}
+        .icon__switcher--dark{background:#2a3230}
+        .icon__switcher--light{background:#fff}
+        .icon__switcher--color{background:linear-gradient(135deg,#fff 50%,#4fb76c 50%)#4fb76c}
+        .icon__switcher--dark-color{background: linear-gradient(135deg,#2a3230 50%,#4fb76c 50%)#4fb76c}
+        .button {font-size:1.5rem;background:#4FB76C;color:#fff;border:0;padding:0.5rem 0.75rem;box-shadow:0 2px 3px hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.1);cursor:pointer;transition:box-shadow .4s cubic-bezier(.25,.8,.25,1),transform .2s}
+        .button:hover,.button:focus{outline:0;box-shadow:0 7px 28px rgba(0,0,0,.25),0 5px 10px rgba(0,0,0,.22);transform:translateY(-3px)}
+    </style>
+    <script>
+        window.loadSprite=function(a,b){var c=new XMLHttpRequest;c.open('HEAD',a,!0),c.onload=function(){function d(){document.body?f():document.addEventListener('DOMContentLoaded',f)}function f(){document.body.insertAdjacentHTML('afterbegin',g[j])}var g=localStorage||{};try{g.test=0}catch(n){g={}}var h='ANTicons'+b+'__',i=h+'url',j=h+'sprite',k=h+'ts',l=''+new Date(c.getResponseHeader('Last-Modified')).getTime();if(g[j]&&g[i]===a&&g[k]===l)d();else{var m=new XMLHttpRequest;m.open('GET',a,!0),m.onload=function(){200<=m.status&&400>m.status&&(g[i]=a,g[j]=m.responseText,g[k]=new Date(m.getResponseHeader('Last-Modified')).getTime(),d())},m.send()}},c.send()};
+        loadSprite('icons.svg')
+    </script>
+</head>
+<body>
+<div class="logo__wrap">
+    <img src="https://cxdev50staffing.carerix.net/seamless/assets/cx-logo.svg" alt="Carerix" class="logo">
+</div>
+
+<div class="icon__wrap">
+    <% _.each(icons, function(icon) { %>
+    <div class="icon icon--light">
+        <cx-icon><%= icon %></cx-icon>
+        <div class="icon__controls">
+            <div class="icon__name"><%= icon %></div>
+        </div>
+    </div>
+    <% }); %>
+</div>
+
+<script src="webcomponents-loader.js"></script>
+<script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js"></script>
+<script>
+  <%= script %>
+</script>
+</body>
+</html>

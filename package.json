@@ -1,0 +1,43 @@
+{
+  "name": "cx-icons",
+  "version": "1.1.0",
+  "description": "CxIcon web components",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack",
+    "verify": "standard",
+    "test": "bash test/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Anton Parkhomenko",
+  "license": "MIT",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.1.3",
+    "copy-webpack-plugin": "^4.5.2",
+    "html-webpack-plugin": "^3.2.0",
+    "svg-spritemap-webpack-plugin": "^2.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.2",
+    "standard": "^12.0.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "commonjs": true,
+      "es6": true
+    },
+    "globals": [
+      "HTMLElement"
+    ]
+  }
+}

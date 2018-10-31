@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>filetag-picture</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="filetag-picture" fill="#000000">
+            <path d="M0,0 L0,512 L512,512 L512,0 L0,0 Z M460.8,51.2 L460.8,322.56 L409.6,271.36 L307.2,373.76 L128,194.56 L51.2,271.36 L51.2,51.2 L460.8,51.2 Z M51.2,343.04 L128,266.24 L322.56,460.8 L51.2,460.8 L51.2,343.04 Z M394.24,460.8 L343.04,409.6 L409.6,343.04 L460.8,394.24 L460.8,460.8 L394.24,460.8 Z M320,179.2 C298.792266,179.2 281.6,162.007734 281.6,140.8 C281.6,119.592266 298.792266,102.4 320,102.4 C341.207734,102.4 358.4,119.592266 358.4,140.8 C358.4,162.007734 341.207734,179.2 320,179.2 Z" id="Mask"></path>
+        </g>
+    </g>
+</svg>
